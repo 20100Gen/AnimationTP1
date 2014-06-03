@@ -319,7 +319,6 @@ l'animation.
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes metronome{
-(ici il vous est permis de changer le nom du keyframe. Ne pas oublier de le changer dans l'animation aussi.)
 	0%{ 
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;
