@@ -319,16 +319,19 @@ l'animation.
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes metronome{
+
 	0%{ 
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;
 		background-color: red;
 	}
+	
 	50%{
 		transform: scale(-1);
 		opacity: 0.5;
 		background-color: yellow;
 	}
+	
 	100%{
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;	
