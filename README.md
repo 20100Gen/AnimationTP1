@@ -502,19 +502,18 @@ l'animation.
 
 /* Navigateur Internet Explorer version 10 et +.  */
 
-
 @keyframes bondir{
     0%{
       bottom: 0px;
       animation-timing-function: ease-out;
-	  transform: translateX(0px);
-	  background-color: red;	  
+      transform: translateX(0px);
+      background-color: red;	  
     }
     25%{
       bottom: 400px;
       animation-timing-function: ease-in;
-	  background-color: green;
-	  transform: translateX(50px);
+      background-color: green;
+      transform: translateX(50px);
     }
     50%{
       bottom: 0px;
