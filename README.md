@@ -34,26 +34,26 @@ Voici la configuration HTML requise.
 
 <body>
 
-	<!-- ANIMATION TOURBILLON-->
-	<div class= "tourbillon">
+<!-- ANIMATION TOURBILLON-->
+<div class= "tourbillon">
 </div>
-    
-    <!-- ANIMATION PING-PONG-->	
-    <div class= "pingpong">
+
+<!-- ANIMATION PING-PONG-->	
+<div class= "pingpong">
 </div>
-   
-     
-        <!-- ANIMATION METRONOME-->	
-    <div class="metronome">
+
+
+<!-- ANIMATION METRONOME-->	
+<div class="metronome">
 </div>
-    
-     <!-- ANIMATION flip-->	
-    <div class="flip">
+
+<!-- ANIMATION flip-->	
+<div class="flip">
 </div>
-    
-    
-        <!-- ANIMATION BONDIR-->	
-    <div class="bondir">
+
+
+<!-- ANIMATION BONDIR-->	
+<div class="bondir">
 </div>   
 
 </body>
@@ -86,24 +86,24 @@ Vous pouvez dans cette animation changer quelques petites choses.
 
 .tourbillon{ 
 
-	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
+(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
 
-	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
-	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image
-	margin-top: 350px; (La position peut aussi être modifié comme vous le désirez)
-	margin-left: 500px; (La position peut aussi être modifiée comme vous le désirez)
-	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
-	background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
-	border-radius: 10px; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi)
+display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image
+margin-top: 350px; (La position peut aussi être modifié comme vous le désirez)
+margin-left: 500px; (La position peut aussi être modifiée comme vous le désirez)
+margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
+border-radius: 10px; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi)
 
 
 /* Navigateur Internet Explorer version 10 et +.  */
 
-	animation-name: tourbillon; /* Nom de l'animation. */
-	animation-duration: 2s; /* Nombre de temps que l'animation sera exécutée. */
-	animation-iteration-count: infinite; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+animation-name: tourbillon; /* Nom de l'animation. */
+animation-duration: 2s; /* Nombre de temps que l'animation sera exécutée. */
+animation-iteration-count: infinite; /* Nombre de fois que l'animation sera exécutée. */
+animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
 
 
 Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
@@ -142,18 +142,18 @@ l'animation.
 
 @keyframes tourbillon {ici il vous est permis de changer le nom du keyframe. (Ne pas oublier de le changer dans l'animation aussi.)
 
-	0%	{	
-		background-color: black;
-		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
-	50%	{
-		background-color: red;
-		transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
-		}
-	100%{
-		background-color: black;
-		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
+0%	{	
+background-color: black;
+transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+}
+50%	{
+background-color: red;
+transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
+}
+100%{
+background-color: black;
+transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+}
 } 
 
 
@@ -172,24 +172,24 @@ Vous pouvez dans cette animation changer quelques petites choses.
 
 
 .pingpong{ 
-	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
+(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
 
-	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	border-radius: 100%; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
-	background-color: red; (La couleur peut être conservée ou retirée complètement dépendamment de l'utilisation que vous en faites)
-	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
-	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+border-radius: 100%; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
+background-color: red; (La couleur peut être conservée ou retirée complètement dépendamment de l'utilisation que vous en faites)
+display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
 
 
 
 /* Navigateur Internet Explorer version 10 et +.  */
 
-	animation-name: pingpong;  /* Nom de l'animation. */
-	animation-duration: 5s;  /* Nombre de temps que l'animation sera exécutée. */
-	animation-iteration-count: 3;  /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease-in-out; / Spécifie la vitesse de la courbe de l'animation.*/
-	animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+animation-name: pingpong;  /* Nom de l'animation. */
+animation-duration: 5s;  /* Nombre de temps que l'animation sera exécutée. */
+animation-iteration-count: 3;  /* Nombre de fois que l'animation sera exécutée. */
+animation-timing-function: ease-in-out; / Spécifie la vitesse de la courbe de l'animation.*/
+animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
 
 
 Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
@@ -230,19 +230,19 @@ l'animation.
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes pingpong{
-	
-	0%{ 
-		background-color: blue;
-		transform: scalex(1) translate(0px);
-	}	 
-	50%{
-		background-color: yellow;
-		transform: scalex(-1)  translate(30px);
-	}	
-	100%{
-		background-color: blue;
-		transform: scalex(1)  translate(0px);
-	}
+
+0%{ 
+	background-color: blue;
+	transform: scalex(1) translate(0px);
+}	 
+50%{
+	background-color: yellow;
+	transform: scalex(-1)  translate(30px);
+}	
+100%{
+	background-color: blue;
+	transform: scalex(1)  translate(0px);
+}
 }
 
 
@@ -261,23 +261,23 @@ Vous pouvez dans cette animation changer quelques petites choses.
 
 
 .metronome{
-	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
-	
-	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
-	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
-	border-radius: 10px; (Ceci arrondi les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
-	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
 
-	
+display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
+border-radius: 10px; (Ceci arrondi les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
+margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+
+
 /* Navigateur Internet Explorer version 10 et +.  */
 
- 	animation-name: metronome; /* Nom de l'animation. */
-        animation-duration: 1s; /* Nombre de temps que l'animation sera exécutée. */
-	animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
-	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+ animation-name: metronome; /* Nom de l'animation. */
+animation-duration: 1s; /* Nombre de temps que l'animation sera exécutée. */
+animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécutée. */
+animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
+animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
 
 
 Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
@@ -318,22 +318,22 @@ l'animation.
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes metronome{
-	0%{ 
-		transform: scale(1) skew(-10deg);
-		opacity: 1.0;
-		background-color: red;
-	}
-	50%{
-		transform: scale(-1);
-		opacity: 0.5;
-		background-color: yellow;
-		
-	}
-	100%{
-		transform: scale(1) skew(-10deg);
-		opacity: 1.0;	
-		background-color: green;
-	}	
+0%{ 
+	transform: scale(1) skew(-10deg);
+	opacity: 1.0;
+	background-color: red;
+}
+50%{
+	transform: scale(-1);
+	opacity: 0.5;
+	background-color: yellow;
+	
+}
+100%{
+	transform: scale(1) skew(-10deg);
+	opacity: 1.0;	
+	background-color: green;
+}	
 }
 
 
@@ -351,22 +351,22 @@ Vous pouvez dans cette animation changer quelques petites choses.
 
 
 .flip{ 
-	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
-	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
-	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
-	border-radius: 10px; (Ceci arrondi les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
-	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
+display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
+border-radius: 10px; (Ceci arrondi les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
+margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
 
-	
+
 /* Navigateur Internet Explorer version 10 et +.  */
 
- 	animation-name: flip; /* Nom de l'animation. */
-        animation-duration: 7s; /* Nombre de temps que l'animation sera exécutée. */
-	animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
-	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+ animation-name: flip; /* Nom de l'animation. */
+animation-duration: 7s; /* Nombre de temps que l'animation sera exécutée. */
+animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
+animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
+animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
 
 
 Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
@@ -407,18 +407,18 @@ l'animation.
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes flip{
-	0%{ 
-		transform: scalex(1) rotatex(0deg);
-		background-color: red;
-	}	 
-	50%{
-		transform: scalex(1) rotatex(1800deg);
-		background-color: black;
-	}	
-	100%{
-		transform: scalex(1) rotatex(0deg);
-		background-color: red;
-	}	
+0%{ 
+	transform: scalex(1) rotatex(0deg);
+	background-color: red;
+}	 
+50%{
+	transform: scalex(1) rotatex(1800deg);
+	background-color: black;
+}	
+100%{
+	transform: scalex(1) rotatex(0deg);
+	background-color: red;
+}	
 }
 
 
@@ -438,31 +438,31 @@ Vous pouvez dans cette animation changer quelques petites choses.
 
 
 .bondir{
-	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
+(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
 
-	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
-	La position: relative; (vous pouvez changer ceci par les différentes positions que voici:
-	
-	La position absolu : il nous permet de placer un élément n'importe où sur la page (en haut à gauche, en bas à droite, tout au centre, etc.).
-	La position fixe : identique au positionnement absolu, mais, cette fois, l'élément reste toujours visible,
-        même si on descend plus bas dans la page. C'est un peu le même principe que background-attachment: fixed; (si vous vous en souvenez encore).
-	La position relative : permets de décaler l'élément par rapport à sa position normale.
+display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+La position: relative; (vous pouvez changer ceci par les différentes positions que voici:
+
+La position absolu : il nous permet de placer un élément n'importe où sur la page (en haut à gauche, en bas à droite, tout au centre, etc.).
+La position fixe : identique au positionnement absolu, mais, cette fois, l'élément reste toujours visible,
+même si on descend plus bas dans la page. C'est un peu le même principe que background-attachment: fixed; (si vous vous en souvenez encore).
+La position relative : permets de décaler l'élément par rapport à sa position normale.
 
 
-   	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-    	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-	background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
-    	border-radius: 100%; (Ceci arrondi les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
-	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
-	
-	
+   width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+    height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
+    border-radius: 100%; (Ceci arrondi les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
+margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+
+
 /* Navigateur Internet Explorer version 10 et +.  */
 
- 	animation-name: bondir; /* Nom de l'animation. */
- 	animation-duration: 4s; /* Nombre de temps que l'animation sera exécutée. */
-        animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
-        animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
-        animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+ animation-name: bondir; /* Nom de l'animation. */
+ animation-duration: 4s; /* Nombre de temps que l'animation sera exécutée. */
+animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
+animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
+animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
 
 
 Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
@@ -503,35 +503,35 @@ l'animation.
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes bondir{
-    0%{
-      bottom: 0px;
-      animation-timing-function: ease-out;
-      transform: translateX(0px);
-      background-color: red;	  
-    }
-    25%{
-      bottom: 400px;
-      animation-timing-function: ease-in;
-      background-color: green;
-      transform: translateX(50px);
-    }
-    50%{
-      bottom: 0px;
-      animation-timing-function: ease-out;
-      background-color: blue; 
-      transform: translateX(100px);
-    }
-    75%{
-      bottom: 400px;
-      animation-timing-function: ease-in;
-      background-color: green;
-      transform: translateX(50px);
-    }
-    100%{
-      bottom: 0px;
-      animation-timing-function: ease-out;
-      background-color: blue; 
-      transform: translateX(0px);
-    }
- }
+0%{
+bottom: 0px;
+animation-timing-function: ease-out;
+transform: translateX(0px);
+background-color: red;	  
+}
+25%{
+bottom: 400px;
+animation-timing-function: ease-in;
+background-color: green;
+transform: translateX(50px);
+}
+50%{
+bottom: 0px;
+animation-timing-function: ease-out;
+background-color: blue; 
+transform: translateX(100px);
+}
+75%{
+bottom: 400px;
+animation-timing-function: ease-in;
+background-color: green;
+transform: translateX(50px);
+}
+100%{
+bottom: 0px;
+animation-timing-function: ease-out;
+background-color: blue; 
+transform: translateX(0px);
+}
+}
 
