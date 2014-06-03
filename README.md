@@ -102,7 +102,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
 	animation-name: tourbillon; /* Nom de l'animation. */
 	animation-duration: 2s; /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: infinite; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
 
 
 Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
@@ -142,18 +142,20 @@ l'animation.
 @keyframes tourbillon {
 (ici il vous est permis de changer le nom du keyframe. Ne pas oublier de le changer dans l'animation aussi.)
 
-	0%	{	
+	0%{	
 		background-color: black;
 		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
-	50%	{
+	}
+
+	50%{
 		background-color: red;
 		transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
-		}
+	}
+
 	100%{
 		background-color: black;
 		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
+	}
 } 
 
 
@@ -188,7 +190,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
 	animation-name: pingpong;  /* Nom de l'animation. */
 	animation-duration: 5s;  /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: 3;  /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease-in-out; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease-in-out; / Spécifie la vitesse de la courbe de l'animation.*/
 	animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
 
 
@@ -229,21 +231,24 @@ l'animation.
 
 /* Navigateur Internet Explorer version 10 et +.  */
 
-@keyframes pingpong{
+@keyframes pingpong {
 (ici il vous est permis de changer le nom du keyframe. Ne pas oublier de le changer dans l'animation aussi.)
 	
 	0%{ 
 		background-color: blue;
 		transform: scalex(1) translate(0px);
-	}	 
+	}
+	 
 	50%{
 		background-color: yellow;
 		transform: scalex(-1)  translate(30px);
-	}	
+	}
+	
 	100%{
 		background-color: blue;
 		transform: scalex(1)  translate(0px);
 	}
+
 }
 
 
@@ -277,7 +282,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
  	animation-name: metronome; /* Nom de l'animation. */
         animation-duration: 1s; /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
 	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
 
 
@@ -319,19 +324,19 @@ l'animation.
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes metronome{
-
+(ici il vous est permis de changer le nom du keyframe. Ne pas oublier de le changer dans l'animation aussi.)
 	0%{ 
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;
 		background-color: red;
 	}
-	
+
 	50%{
 		transform: scale(-1);
 		opacity: 0.5;
 		background-color: yellow;
 	}
-	
+
 	100%{
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;	
@@ -368,7 +373,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
  	animation-name: flip; /* Nom de l'animation. */
         animation-duration: 7s; /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
 	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
 
 
@@ -415,10 +420,12 @@ l'animation.
 		transform: scalex(1) rotatex(0deg);
 		background-color: red;
 	}	 
+
 	50%{
 		transform: scalex(1) rotatex(1800deg);
 		background-color: black;
-	}	
+	}
+	
 	100%{
 		transform: scalex(1) rotatex(0deg);
 		background-color: red;
@@ -465,7 +472,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
  	animation-name: bondir; /* Nom de l'animation. */
         animation-duration: 4s; /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
 	animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
 
 
@@ -512,32 +519,36 @@ l'animation.
     0%{
       bottom: 0px;
       animation-timing-function: ease-out;
-	  transform: translateX(0px);
-	  background-color: red;	  
+      transform: translateX(0px);
+      background-color: red;	  
     }
+
     25%{
       bottom: 400px;
       animation-timing-function: ease-in;
-	  background-color: green;
-	  transform: translateX(50px);
+      background-color: green;
+      transform: translateX(50px);
     }
+
     50%{
       bottom: 0px;
       animation-timing-function: ease-out;
       background-color: blue; 
       transform: translateX(100px);
     }
+
     75%{
       bottom: 400px;
       animation-timing-function: ease-in;
       background-color: green;
       transform: translateX(50px);
     }
+
     100%{
       bottom: 0px;
       animation-timing-function: ease-out;
       background-color: blue; 
       transform: translateX(0px);
     }
- }
 
+ }
