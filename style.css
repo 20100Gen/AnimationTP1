@@ -9,7 +9,7 @@
 
 /* ANIMATION TOURBILLON */
 
-.tourbillon {
+.tourbillon{
 
 display: inline-block;
 width: 40px;
@@ -49,52 +49,61 @@ border-radius: 10px;
 /* Navigateur Internet Explorer version 10 et +.  */
 
 @keyframes tourbillon{
-	0%	{	
+	
+	0%{	
 		background-color: black;
 		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
-	50%	{
+	}
+	
+	50%{
 		background-color: red;
 		transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
-		}
+	}
+	
 	100%{
 		background-color: black;
 		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
+	}
 }
 
 /* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
 
 @-webkit-keyframes tourbillon{
-	0%	{	
+	
+	0%{	
 		background-color: black;
 		-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
-	50%	{
+	}
+	
+	50%{
 		background-color: red;
 		-webkit-transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
-		}
+	}
+	
 	100%{
 		background-color: black;
 		-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
+	}
 }
 
 /* Navigateur Mozilla version 5 et + */
 
 @-moz-keyframes tourbillon {
-	0%	{	
+	
+	0%{	
 		background-color: black;
 		-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
-	50%	{
+	}
+	
+	50%{
 		background-color: red;
 		-moz-transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
-		}
+	}
+	
 	100%{
 		background-color: black;
 		-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
-		}
+	}
 }
 
 
@@ -147,14 +156,17 @@ margin-right: 50px;
 /* Navigateur Internet explorer version 10 et +.  */
 
 @keyframes pingpong{
+	
 	0%{ 
 		background-color: blue;
 		transform: scalex(1) translate(0px);
-	}	 
+	}
+		 
 	50%{
 		background-color: yellow;
 		transform: scalex(-1)  translate(30px);
-	}	
+	}
+		
 	100%{
 		background-color: blue;
 		transform: scalex(1)  translate(0px);
@@ -165,14 +177,17 @@ margin-right: 50px;
 /* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
 
 @-webkit-keyframes pingpong{
+	
 	0%{ 
 		background-color: blue;
 		-webkit-transform: scalex(1) translate(0px);
 	}	 
+	
 	50%{
 		background-color: yellow;
 		-webkit-transform: scalex(-1) translate(30px);
 	}	
+	
 	100%{
 		background-color: blue;
 		-webkit-transform: scalex(1) translate(0px);
@@ -182,14 +197,17 @@ margin-right: 50px;
 /* Navigateur Mozilla version 5 et + */
 
 @-moz-keyframes pingpong{
+	
 	0%{ 
 		background-color: blue;
 		-moz-transform: scalex(1) translate(0px);
-	}	 
+	}
+		 
 	50%{
 		background-color: yellow;
 		-moz-transform: scalex(-1) translate(30px);
-	}	
+	}
+		
 	100%{
 		background-color: blue;
 		-moz-transform: scalex(1) translate(0px);
@@ -244,17 +262,20 @@ margin-right: 50px;
 /* Navigateur Internet explorer version 10 et +.  */
 
 @keyframes metronome{
+	
 	0%{ 
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;
 		background-color: red;
 	}
+	
 	50%{
 		transform: scale(-1);
 		opacity: 0.5;
 		background-color: yellow;
 		
 	}
+	
 	100%{
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;	
@@ -265,16 +286,19 @@ margin-right: 50px;
 /* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
 
 @-webkit-keyframes metronome{
+	
 	0%{ 
 		-webkit-transform: scale(1) skew(-10deg);
 		opacity: 1.0;
 		background-color: red;
 	}
+	
 	50%{
 		-webkit-transform: scale(-1);
 		opacity: 0.5;
 		background-color: yellow;
 	}
+	
 	100%{
 		-webkit-transform: scale(1) skew(-10deg);
 		opacity: 1.0;
@@ -285,16 +309,19 @@ margin-right: 50px;
 /* Navigateur Mozilla version 5 et + */
 
 @-moz-keyframes metronome{
+	
 	0%{ 
 		-moz-transform: scale(1) skew(-10deg);
 		opacity: 1.0;
 		background-color: red;
 	}
+	
 	50%{
 		-moz-transform: scale(-1);
 		opacity: 0.5;
 		background-color: yellow;
 	}
+	
 	100%{
 		-moz-transform: scale(1) skew(-10deg);
 		opacity: 1.0;	
@@ -350,14 +377,17 @@ margin-right: 50px;
 /* Navigateur Internet explorer version 10 et +.  */
 
 @keyframes flip{
+	
 	0%{ 
 		transform: scalex(1) rotatex(0deg);
 		background-color: red;
-	}	 
+	}	
+	 
 	50%{
 		transform: scalex(1) rotatex(1800deg);
 		background-color: black;
-	}	
+	}
+		
 	100%{
 		transform: scalex(1) rotatex(0deg);
 		background-color: red;
@@ -367,14 +397,17 @@ margin-right: 50px;
 /* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
 
 @-webkit-keyframes flip{
+	
 	0%{ 
 		-webkit-transform: scalex(1) rotatex(0deg);
 		background-color: red;
-	}	 
+	}
+		 
 	50%{
 		-webkit-transform: scalex(1) rotatex(1800deg);
 		background-color: black;
-	}	
+	}
+		
 	100%{
 		-webkit-transform: scalex(1) rotatex(0deg);
 		background-color: red;
@@ -384,14 +417,17 @@ margin-right: 50px;
 /* Navigateur Mozilla version 5 et + */
 
 @-moz-keyframes flip{
+	
 	0%{ 
 		-moz-transform: scalex(1) rotatex(0deg);
 		background-color: red;
 	}	 
+	
 	50%{
 		-moz-transform: scalex(1) rotatex(1800deg);
 		background-color: black;
 	}	
+	
 	100%{
 		-moz-transform: scalex(1) rotatex(0deg);
 		background-color: red;
@@ -446,30 +482,35 @@ margin-right: 50px;
 /* Navigateur Internet explorer version 10 et +.  */
 
 @keyframes bondir{
+	
     0%{
       bottom: 0px;
       animation-timing-function: ease-out;
 	  transform: translateX(0px);
 	  background-color: red;	  
     }
+	
     25%{
       bottom: 400px;
       animation-timing-function: ease-in;
 	  background-color: green;
 	  transform: translateX(50px);
 	}
+	
 	50%{
       bottom: 0px;
       animation-timing-function: ease-out;
 	  background-color: blue; 
 	  transform: translateX(100px);
 	}
+	
 	75%{
       bottom: 400px;
       animation-timing-function: ease-in;
 	  background-color: green;
 	  transform: translateX(50px);
 	}
+	
 	100%{
       bottom: 0px;
       animation-timing-function: ease-out;
@@ -481,6 +522,7 @@ margin-right: 50px;
 /* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
 
  @-webkit-keyframes bondir{
+	 
     0%{
       bottom: 0px;
       -webkit-animation-timing-function: ease-out;
@@ -493,18 +535,21 @@ margin-right: 50px;
 	  background-color: green;
 	  -webkit-transform: translateX(50px);
 	}
+	
 	50%{
       bottom: 0px;
       -webkit-animation-timing-function: ease-out;
 	  background-color: blue; 
 	  -webkit-transform: translateX(100px);
 	}
+	
     75%{
       bottom: 400px;
       -webkit-animation-timing-function: ease-in;
 	  background-color: green;
 	  -webkit-transform: translateX(50px);
 	}
+	
 	100%{
       bottom: 0px;
       -webkit-animation-timing-function: ease-out;
@@ -517,6 +562,7 @@ margin-right: 50px;
 /* Navigateur Mozilla version 5 et + */ 
 
 @-moz-keyframes bondir{
+	
     0%{
       bottom: 0px;
       -moz-animation-timing-function: ease-out;
