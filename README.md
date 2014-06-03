@@ -241,5 +241,90 @@ l'animation.
 	}
 }
 
+3- ANIMATION METRONOME
+
+Cette animation à pour but de représenter un effet de mouvement qui s'apparente à celui d'un métronome.
+
+
+Les paramètres ci-dessous sont modifiables dans le fichier style.css.
+
+Vous pouvez dans cette animation changer quelques petites choses.
+
+
+#metronome{ 
+
+	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
+	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+	background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
+	border-radius: 10px; (Ceci arrondi les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
+	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+
+	
+/* Navigateur Internet Explorer version 10 et +.  */
+
+ 	animation-name: metronome; /* Nom de l'animation. */
+        animation-duration: 1s; /* Nombre de temps que l'animation sera exécutée. */
+	animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécutée. */
+	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+
+
+Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
+identique dans tous les keyframes et animation si l'on veut retrouver la même animation dans  tous les navigateurs.
+
+animation-name: metronome; 
+Ici il vous est permis de changer le nom de l'animation. (Ne pas oublier de le changer dans le Keyframes aussi.)
+
+animation-duration: 1s;
+Ici vous pouvez changer le temps en seconde(ex:1s) de la durée pendant laquelle l'animation sera exécutée.
+Plus le temps est court plus l'animation ce déroule rapidement, plus le temps est long plus l'animation ce déroule lentement.
+
+
+animation-iteration-count: 8; 
+Ici vous pouvez changer le nombre de fois que l'animation sera exécutée. Vous pouvez le représenter par un nombre(ex:50 qui veut
+dire que l'animation va recommencer 50 fois) ou y inscrire infinite qui veut dire que l'animation va recommencer à l'infini.
+
+animation-timing-function: ease; 
+Ici vous pouvez spécifier la vitesse de la courbe de l'animation. Par ease, ease-in, ease-out, ease-in-out, linear ou encore le cube de
+bézier.
+
+ease: décélère légèrement au début et termine sa transition lentement.
+ease-in: commencera lentement.
+ease-in-out: commencera et finira lentement.
+linear: la transition sera stable sans décélération ni accélération.
+cubic-bezier: (0, 0, 0, 0) cela défini la courbe de l'animation.
+
+animation-delay: 2s; 
+Ici vous pouvez changer le temps en seconde(ex:1s) et cela déterminera le délai avant que l'animation débute.
+
+
+Vous pouvez aussi changer les différentes informations dans les keyframes qui sont reliés à l'opacité ou la couleur quand elles
+sont appliquées, mais évité de changer les propriétés transform ou animation car cela changerait les propriétés originales de l'animation
+et ce quelle projette. Il vous est quand même possible d'expérimenter les pourcentages de début et de fin de l'animation, mais cela changera
+l'animation.
+
+
+/* Navigateur Internet Explorer version 10 et +.  */
+
+@keyframes metronome{
+	0%{ 
+		transform: scale(1) skew(-10deg);
+		opacity: 1.0;
+		background-color: red;
+	}
+	50%{
+		transform: scale(-1);
+		opacity: 0.5;
+		background-color: yellow;
+		
+	}
+	100%{
+		transform: scale(1) skew(-10deg);
+		opacity: 1.0;	
+		background-color: green;
+	}	
+}
 
 
