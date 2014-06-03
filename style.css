@@ -1,0 +1,555 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*                                                 LIBRAIRIE D'ANIMATION                                                 */
+
+
+/* Cette animation peut être utilisé avec une forme, du texte ou une image. Attention de ne pas changer les propriétées des keyframes car cela pourrait avoir un impact sur l'animation qui ne serait plus celle projeté. Parcontre les propriétées de couleurs peuvent être changé à l'intérieur des keyframes. Les propriétés css peuvent aussi être changé à votre guise, tant que cela n'empiète pas sur les autres animations incluses dans cette librairies. Vous pouvez aussi modifiez les propriété des animations en ce qui concerne le nom, la duration, itération-count et le timing-function. Vous trouverez de plus amples informations à ce sujet dans le fichier readme.txt disponible avec ce document.*/
+
+
+/* ANIMATION TOURBILLON */
+
+.tourbillon {
+
+display: inline-block;
+width: 40px;
+height: 40px;
+margin-top: 350px;
+margin-left: 500px;
+margin-right: 50px;
+background: red;
+border-radius: 10px;
+
+
+/* Navigateur Internet explorer version 10 et +.  */
+
+	animation-name: tourbillon; /* Nom de l'animation. */
+	animation-duration: 2s; /* Nombre de temps que l'animation sera exécuté. */
+	animation-iteration-count: infinite; /* Nombre de fois que l'animation sera exécuté. */
+	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+	-webkit-animation-name: tourbillon; /* Nom de l'animation. */
+	-webkit-animation-duration: 2s; /* Nombre de temps que l'animation sera exécuté. */
+	-webkit-animation-iteration-count: infinite; /* Nombre de fois que l'animation sera exécuté. */
+	-webkit-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+
+
+/* Navigateur Mozilla version 5 et + */
+
+	-moz-animation-name: tourbillon; /* Nom de l'animation. */
+	-moz-animation-duration: 2s; /* Nombre de temps que l'animation sera exécuté. */
+	-moz-animation-iteration-count: infinite; /* Nombre de fois que l'animation sera exécuté. */
+	-moz-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+}
+
+
+/* Navigateur Internet Explorer version 10 et +.  */
+
+@keyframes tourbillon{
+	0%	{	
+		background-color: black;
+		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+		}
+	50%	{
+		background-color: red;
+		transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
+		}
+	100%{
+		background-color: black;
+		transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+		}
+}
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+@-webkit-keyframes tourbillon{
+	0%	{	
+		background-color: black;
+		-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+		}
+	50%	{
+		background-color: red;
+		-webkit-transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
+		}
+	100%{
+		background-color: black;
+		-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+		}
+}
+
+/* Navigateur Mozilla version 5 et + */
+
+@-moz-keyframes tourbillon {
+	0%	{	
+		background-color: black;
+		-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+		}
+	50%	{
+		background-color: red;
+		-moz-transform: rotate(365deg) scale(0.250) skew(-28deg) translate(-15px); 
+		}
+	100%{
+		background-color: black;
+		-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+		}
+}
+
+
+/* Cette animation peut être utilisé avec une forme, du texte ou une image. Attention de ne pas changer les propriétées des keyframes car cela pourrait avoir un impact sur l'animation qui ne serait plus celle projeté. Parcontre les propriétées de couleurs peuvent être changé à l'intérieur des keyframes. Les propriétés css peuvent aussi être changé à votre guise, tant que cela n'empiète pas sur les autres animations incluses dans cette librairies. Vous pouvez aussi modifiez les propriété des animations en ce qui concerne le nom, la duration, itération-count et le timing-function. Vous trouverez de plus amples informations à ce sujet dans le fichier readme.txt disponible avec ce document.*/
+
+
+/* ANIMATION PING-PONG */
+
+
+/* Cette animation a été conçu avec le mot "PINGPONG", alors si vous prenez un mot plus grand ou plus petit vous devrez diminuer ou augmenter le nombre de pixel dans le keyframes de la ligne du 50% margin-left: 1115px" afin de que le mot ne sorte pas de l' écran.*/
+
+.pingpong{
+
+height: 40px;
+width: 40px;
+border-radius: 100%;
+background-color: red;
+display: inline-block;
+margin-right: 50px;
+
+
+/* Navigateur Internet explorer version 10 et +.  */
+
+	animation-name: pingpong;  /* Nom de l'animation. */
+	animation-duration: 5s;  /* Nombre de temps que l'animation sera exécuté. */
+	animation-iteration-count: 3;  /* Nombre de fois que l'animation sera exécuté. */
+	animation-timing-function: ease-in-out; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+	-webkit-animation-name: pingpong;  /* Nom de l'animation. */
+	-webkit-animation-duration: 5s;  /* Nombre de temps que l'animation sera exécuté. */
+	-webkit-animation-iteration-count: 3;  /* Nombre de fois que l'animation sera exécuté. */
+	-webkit-animation-timing-function: ease-in-out; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-webkit-animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+
+
+/* Navigateur Mozilla version 5 et + */
+	
+	-moz-animation-name: pingpong;  /* Nom de l'animation. */
+	-moz-animation-duration: 5s;  /* Nombre de temps que l'animation sera exécuté. */
+	-moz-animation-iteration-count: 3;  /* Nombre de fois que l'animation sera exécuté. */
+	-moz-animation-timing-function: ease-in-out; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-moz-animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+}
+
+
+/* Navigateur Internet explorer version 10 et +.  */
+
+@keyframes pingpong{
+	0%{ 
+		background-color: blue;
+		transform: scalex(1) translate(0px);
+	}	 
+	50%{
+		background-color: yellow;
+		transform: scalex(-1)  translate(30px);
+	}	
+	100%{
+		background-color: blue;
+		transform: scalex(1)  translate(0px);
+	}
+}
+
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+@-webkit-keyframes pingpong{
+	0%{ 
+		background-color: blue;
+		-webkit-transform: scalex(1) translate(0px);
+	}	 
+	50%{
+		background-color: yellow;
+		-webkit-transform: scalex(-1) translate(30px);
+	}	
+	100%{
+		background-color: blue;
+		-webkit-transform: scalex(1) translate(0px);
+	}	
+}
+
+/* Navigateur Mozilla version 5 et + */
+
+@-moz-keyframes pingpong{
+	0%{ 
+		background-color: blue;
+		-moz-transform: scalex(1) translate(0px);
+	}	 
+	50%{
+		background-color: yellow;
+		-moz-transform: scalex(-1) translate(30px);
+	}	
+	100%{
+		background-color: blue;
+		-moz-transform: scalex(1) translate(0px);
+	}	
+}
+
+
+/* Cette animation peut être utilisé avec une forme, du texte ou une image. Attention de ne pas changer les propriétées des keyframes car cela pourrait avoir un impact sur l'animation qui ne serait plus celle projeté. Parcontre les propriétées de couleurs peuvent être changé à l'intérieur des keyframes. Les propriétés css peuvent aussi être changé à votre guise, tant que cela n'empiète pas sur les autres animations incluses dans cette librairies. Vous pouvez aussi modifiez les propriété des animations en ce qui concerne le nom, la duration, itération-count et le timing-function. Vous trouverez de plus amples informations à ce sujet dans le fichier readme.txt disponible avec ce document.*/
+
+
+/* ANIMATION METRONOME*/
+
+
+.metronome{
+	display: inline-block;
+	 width: 40px;
+	height: 40px;
+	background: red;
+	border-radius: 10px;
+	margin-right: 50px;
+
+	
+/* Navigateur Internet explorer version 10 et +.  */
+
+ 	animation-name: metronome; /* Nom de l'animation. */
+    animation-duration: 1s; /* Nombre de temps que l'animation sera exécuté. */
+	animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécuté. */
+	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+	
+  
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+    -webkit-animation-name: metronome; /* Nom de l'animation. */
+    -webkit-animation-duration: 1s; /* Nombre de temps que l'animation sera exécuté. */
+	-webkit-animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécuté. */
+	-webkit-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-webkit-animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+  
+
+/* Navigateur Mozilla version 5 et + */
+  
+ 	-moz-animation-name: metronome; /* Nom de l'animation. */
+    -moz-animation-duration: 1s; /* Nombre de temps que l'animation sera exécuté. */
+	-moz-animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécuté. */
+	-moz-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-moz-animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+  
+}
+
+
+/* Navigateur Internet explorer version 10 et +.  */
+
+@keyframes metronome{
+	0%{ 
+		transform: scale(1) skew(-10deg);
+		opacity: 1.0;
+		background-color: red;
+	}
+	50%{
+		transform: scale(-1);
+		opacity: 0.5;
+		background-color: yellow;
+		
+	}
+	100%{
+		transform: scale(1) skew(-10deg);
+		opacity: 1.0;	
+		background-color: green;
+	}	
+}
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+@-webkit-keyframes metronome{
+	0%{ 
+		-webkit-transform: scale(1) skew(-10deg);
+		opacity: 1.0;
+		background-color: red;
+	}
+	50%{
+		-webkit-transform: scale(-1);
+		opacity: 0.5;
+		background-color: yellow;
+	}
+	100%{
+		-webkit-transform: scale(1) skew(-10deg);
+		opacity: 1.0;
+		background-color: green;	
+	}	
+}
+
+/* Navigateur Mozilla version 5 et + */
+
+@-moz-keyframes metronome{
+	0%{ 
+		-moz-transform: scale(1) skew(-10deg);
+		opacity: 1.0;
+		background-color: red;
+	}
+	50%{
+		-moz-transform: scale(-1);
+		opacity: 0.5;
+		background-color: yellow;
+	}
+	100%{
+		-moz-transform: scale(1) skew(-10deg);
+		opacity: 1.0;	
+		background-color: green;
+	}	
+}
+
+
+/* Cette animation peut être utilisé avec une forme, du texte ou une image. Attention de ne pas changer les propriétées des keyframes car cela pourrait avoir un impact sur l'animation qui ne serait plus celle projeté. Parcontre les propriétées de couleurs peuvent être changé à l'intérieur des keyframes. Les propriétés css peuvent aussi être changé à votre guise, tant que cela n'empiète pas sur les autres animations incluses dans cette librairies. Vous pouvez aussi modifiez les propriété des animations en ce qui concerne le nom, la duration, itération-count et le timing-function. Vous trouverez de plus amples informations à ce sujet dans le fichier readme.txt disponible avec ce document.*/
+
+
+/* ANIMATION FLIP  */
+
+
+.flip{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: red;
+	border-radius: 10px;
+	margin-right: 50px;
+
+	
+/* Navigateur Internet explorer version 10 et +.  */
+
+ 	animation-name: flip; /* Nom de l'animation. */
+    animation-duration: 7s; /* Nombre de temps que l'animation sera exécuté. */
+	animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécuté. */
+	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+	
+  
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+    -webkit-animation-name: flip; /* Nom de l'animation. */
+    -webkit-animation-duration: 7s; /* Nombre de temps que l'animation sera exécuté. */
+	-webkit-animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécuté. */
+	-webkit-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-webkit-animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+  
+
+/* Navigateur Mozilla version 5 et + */
+  
+ 	-moz-animation-name: flip; /* Nom de l'animation. */
+    -moz-animation-duration: 7s; /* Nombre de temps que l'animation sera exécuté. */
+	-moz-animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécuté. */
+	-moz-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-moz-animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
+  
+}
+
+
+/* Navigateur Internet explorer version 10 et +.  */
+
+@keyframes flip{
+	0%{ 
+		transform: scalex(1) rotatex(0deg);
+		background-color: red;
+	}	 
+	50%{
+		transform: scalex(1) rotatex(1800deg);
+		background-color: black;
+	}	
+	100%{
+		transform: scalex(1) rotatex(0deg);
+		background-color: red;
+	}	
+}
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+@-webkit-keyframes flip{
+	0%{ 
+		-webkit-transform: scalex(1) rotatex(0deg);
+		background-color: red;
+	}	 
+	50%{
+		-webkit-transform: scalex(1) rotatex(1800deg);
+		background-color: black;
+	}	
+	100%{
+		-webkit-transform: scalex(1) rotatex(0deg);
+		background-color: red;
+	}	
+}
+
+/* Navigateur Mozilla version 5 et + */
+
+@-moz-keyframes flip{
+	0%{ 
+		-moz-transform: scalex(1) rotatex(0deg);
+		background-color: red;
+	}	 
+	50%{
+		-moz-transform: scalex(1) rotatex(1800deg);
+		background-color: black;
+	}	
+	100%{
+		-moz-transform: scalex(1) rotatex(0deg);
+		background-color: red;
+	}	
+}
+
+
+/* Cette animation peut être utilisé avec une forme, du texte ou une image. Attention de ne pas changer les propriétées des keyframes car cela pourrait avoir un impact sur l'animation qui ne serait plus celle projeté. Parcontre les propriétées de couleurs peuvent être changé à l'intérieur des keyframes. Les propriétés css peuvent aussi être changé à votre guise, tant que cela n'empiète pas sur les autres animations incluses dans cette librairies. Vous pouvez aussi modifiez les propriété des animations en ce qui concerne le nom, la duration, itération-count et le timing-function. Vous trouverez de plus amples informations à ce sujet dans le fichier readme.txt disponible avec ce document.*/
+
+
+/*ANIMATION BONDIR*/
+
+.bondir{
+	display: inline-block;
+	position: relative;
+    width: 40px;
+    height: 40px;
+	background: red;
+    border-radius: 100%;
+	margin-right: 50px;
+	
+	
+/* Navigateur Internet explorer version 10 et +.  */
+
+ 	animation-name: bondir; /* Nom de l'animation. */
+    animation-duration: 4s; /* Nombre de temps que l'animation sera exécuté. */
+	animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécuté. */
+	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+  
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+    -webkit-animation-name: bondir; /* Nom de l'animation. */
+    -webkit-animation-duration: 4s; /* Nombre de temps que l'animation sera exécuté. */
+	-webkit-animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécuté. */
+	-webkit-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-webkit-animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+  
+
+/* Navigateur Mozilla version 5 et + */
+  
+ 	-moz-animation-name: bondir; /* Nom de l'animation. */
+    -moz-animation-duration: 4s; /* Nombre de temps que l'animation sera exécuté. */
+	-moz-animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécuté. */
+	-moz-animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	-moz-animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+  
+}
+
+
+/* Navigateur Internet explorer version 10 et +.  */
+
+@keyframes bondir{
+    0%{
+      bottom: 0px;
+      animation-timing-function: ease-out;
+	  transform: translateX(0px);
+	  background-color: red;	  
+    }
+    25%{
+      bottom: 400px;
+      animation-timing-function: ease-in;
+	  background-color: green;
+	  transform: translateX(50px);
+	}
+	50%{
+      bottom: 0px;
+      animation-timing-function: ease-out;
+	  background-color: blue; 
+	  transform: translateX(100px);
+	}
+	75%{
+      bottom: 400px;
+      animation-timing-function: ease-in;
+	  background-color: green;
+	  transform: translateX(50px);
+	}
+	100%{
+      bottom: 0px;
+      animation-timing-function: ease-out;
+	  background-color: blue; 
+	  transform: translateX(0px);
+	}
+ }
+
+/* Navigateur Chrome version 4 et +, Safari version 3.2 et +, Opera version 15 et +.  */
+
+ @-webkit-keyframes bondir{
+    0%{
+      bottom: 0px;
+      -webkit-animation-timing-function: ease-out;
+	  -webkit-transform: translateX(0px);	
+	   background-color: red;	  
+    }
+    25%{
+      bottom: 400px;
+     -webkit-animation-timing-function: ease-in;
+	  background-color: green;
+	  -webkit-transform: translateX(50px);
+	}
+	50%{
+      bottom: 0px;
+      -webkit-animation-timing-function: ease-out;
+	  background-color: blue; 
+	  -webkit-transform: translateX(100px);
+	}
+    75%{
+      bottom: 400px;
+      -webkit-animation-timing-function: ease-in;
+	  background-color: green;
+	  -webkit-transform: translateX(50px);
+	}
+	100%{
+      bottom: 0px;
+      -webkit-animation-timing-function: ease-out;
+	  background-color: blue; 
+	  -webkit-transform: translateX(0px);
+	}
+ }
+
+  
+/* Navigateur Mozilla version 5 et + */ 
+
+@-moz-keyframes bondir{
+    0%{
+      bottom: 0px;
+      -moz-animation-timing-function: ease-out;
+	  -moz-transform: translateX(0px);	
+	   background-color: red;	  
+    }
+    25%{
+      bottom: 400px;
+      -moz-animation-timing-function: ease-in;
+	  background-color: green;
+	  -moz-transform: translateX(50px);
+	}
+	
+	50%{
+      bottom: 0px;
+      -moz-animation-timing-function: ease-out;
+	  background-color: blue; 
+	  -moz-transform: translateX(100px);
+	}
+
+    75%{
+      bottom: 400px;
+      -moz-animation-timing-function: ease-in;
+	 background- color: green;
+	  -moz-transform: translateX(50px);
+	}
+
+	100%{
+      bottom: 0px;
+      -moz-animation-timing-function: ease-out;
+	  background-color: blue; 
+	  -moz-transform: translateX(0px);
+	}
+ }
+
+
