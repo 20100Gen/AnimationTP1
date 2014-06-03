@@ -328,7 +328,6 @@ l'animation.
 		transform: scale(-1);
 		opacity: 0.5;
 		background-color: yellow;
-		
 	}
 	100%{
 		transform: scale(1) skew(-10deg);
