@@ -3,7 +3,6 @@ AnimationTP1
 
 TP1 Cours d'animation
 
-
 Cette librairie compte 5 animations différentes, lesquelles peuvent être utilisées de façon individuelle ou collective.
 
 Voici les 5 animations
@@ -85,16 +84,18 @@ Les paramètres ci-dessous sont modifiables dans le fichier style.css.
 Vous pouvez dans cette animation changer quelques petites choses.
 
 
-.tourbillon { (vous pouvez changer le nom de la classe par ce que vous désirez)
+.tourbillon { 
 
-display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
-width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image
-margin-top: 350px; (La position peut aussi être modifié comme vous le désirez)
-margin-left: 500px; (La position peut aussi être modifiée comme vous le désirez)
-margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
-background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
-border-radius: 10px; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi)
+	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
+
+	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image
+	margin-top: 350px; (La position peut aussi être modifié comme vous le désirez)
+	margin-left: 500px; (La position peut aussi être modifiée comme vous le désirez)
+	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+	background: red; (La couleur peut être conservé ou retiré complètement dépendamment de l'utilisation que vous en faites)
+	border-radius: 10px; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi)
 
 
 /* Navigateur Internet Explorer version 10 et +.  */
@@ -170,14 +171,15 @@ Les paramètres ci-dessous sont modifiables dans le fichier style.css.
 Vous pouvez dans cette animation changer quelques petites choses.
 
 
-.pingpong{ (vous pouvez changer le nom de la classe par ce que vous désirez)
+.pingpong{ 
+	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
 
-height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
-border-radius: 100%; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
-background-color: red; (La couleur peut être conservée ou retirée complètement dépendamment de l'utilisation que vous en faites)
-display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
-margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
+	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
+	border-radius: 100%; (Ceci arrondit les coins de la forme, cela peut être conservé ou retiré complètement aussi.)
+	background-color: red; (La couleur peut être conservée ou retirée complètement dépendamment de l'utilisation que vous en faites)
+	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+	margin-right: 50px; (La position peut aussi être modifiée comme vous le désirez)
 
 
 
@@ -258,7 +260,9 @@ Les paramètres ci-dessous sont modifiables dans le fichier style.css.
 Vous pouvez dans cette animation changer quelques petites choses.
 
 
-#metronome{ (vous pouvez changer le nom de la classe par ce que vous désirez)
+#metronome{ 
+
+	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
 	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
 	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
 	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
@@ -346,7 +350,8 @@ Les paramètres ci-dessous sont modifiables dans le fichier style.css.
 Vous pouvez dans cette animation changer quelques petites choses.
 
 
-#flip{ (vous pouvez changer le nom de la classe par ce que vous désirez)
+#flip{ 
+	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
 	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
 	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
 	height: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
@@ -433,16 +438,15 @@ Vous pouvez dans cette animation changer quelques petites choses.
 
 
 #bondir{
+	(vous pouvez changer le nom de la classe ou l'id par ce que vous désirez)
+
 	display: inline-block; (Vous pouvez changer le type de display en display: block par exemple)
+	La position: relative; (vous pouvez changer ceci par les différentes positions que voici:
 	
-	position: relative; (vous pouvez changer ceci par les différentes positions que voici:
-
-	Le positionnement absolu : il nous permet de placer un élément n'importe où sur la page (en haut à gauche, en bas à droite, tout au centre, etc.).
-
-	Le positionnement fixe : identique au positionnement absolu, mais, cette fois, l'élément reste toujours visible,
+	La position absolu : il nous permet de placer un élément n'importe où sur la page (en haut à gauche, en bas à droite, tout au centre, etc.).
+	La position fixe : identique au positionnement absolu, mais, cette fois, l'élément reste toujours visible,
         même si on descend plus bas dans la page. C'est un peu le même principe que background-attachment: fixed; (si vous vous en souvenez encore).
-
-	Le positionnement relatif : permets de décaler l'élément par rapport à sa position normale.
+	La position relative : permets de décaler l'élément par rapport à sa position normale.
 
 
    	width: 40px; (Le format de la forme peut être remplacé par du texte dans une balise appropriée ou une balise image)
