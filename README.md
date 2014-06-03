@@ -515,23 +515,23 @@ l'animation.
       animation-timing-function: ease-in;
 	  background-color: green;
 	  transform: translateX(50px);
-	}
-	50%{
+    }
+    50%{
       bottom: 0px;
       animation-timing-function: ease-out;
-	  background-color: blue; 
-	  transform: translateX(100px);
-	}
-	75%{
+      background-color: blue; 
+      transform: translateX(100px);
+    }
+    75%{
       bottom: 400px;
       animation-timing-function: ease-in;
-	  background-color: green;
-	  transform: translateX(50px);
-	}
-	100%{
+      background-color: green;
+      transform: translateX(50px);
+    }
+    100%{
       bottom: 0px;
       animation-timing-function: ease-out;
-	  background-color: blue; 
-	  transform: translateX(0px);
-	}
+      background-color: blue; 
+      transform: translateX(0px);
+    }
  }
