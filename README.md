@@ -325,6 +325,7 @@ l'animation.
 
 @keyframes metronome{
 (ici il vous est permis de changer le nom du keyframe. Ne pas oublier de le changer dans l'animation aussi.)
+
 	0%{ 
 		transform: scale(1) skew(-10deg);
 		opacity: 1.0;
@@ -416,6 +417,7 @@ l'animation.
 
 @keyframes flip{
 (ici il vous est permis de changer le nom du keyframe. Ne pas oublier de le changer dans l'animation aussi.)
+
 	0%{ 
 		transform: scalex(1) rotatex(0deg);
 		background-color: red;
@@ -516,6 +518,7 @@ l'animation.
 
 @keyframes bondir{
 (ici il vous est permis de changer le nom du keyframe. Ne pas oublier de le changer dans l'animation aussi.)
+
     0%{
       bottom: 0px;
       animation-timing-function: ease-out;
