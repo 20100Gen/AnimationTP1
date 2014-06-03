@@ -188,7 +188,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
 	animation-name: pingpong;  /* Nom de l'animation. */
 	animation-duration: 5s;  /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: 3;  /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease-in-out; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease-in-out; / Spécifie la vitesse de la courbe de l'animation.*/
 	animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
 
 
@@ -276,7 +276,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
  	animation-name: metronome; /* Nom de l'animation. */
         animation-duration: 1s; /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: 8; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
 	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
 
 
@@ -365,7 +365,7 @@ Vous pouvez dans cette animation changer quelques petites choses.
  	animation-name: flip; /* Nom de l'animation. */
         animation-duration: 7s; /* Nombre de temps que l'animation sera exécutée. */
 	animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
+	animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
 	animation-delay: 2s; /* Spécifie dans combien de temps l'animation débutera */
 
 
@@ -459,10 +459,10 @@ Vous pouvez dans cette animation changer quelques petites choses.
 /* Navigateur Internet Explorer version 10 et +.  */
 
  	animation-name: bondir; /* Nom de l'animation. */
-        animation-duration: 4s; /* Nombre de temps que l'animation sera exécutée. */
-	animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
-	animation-timing-function: ease; /* Spécifie la vitesse de la courbe de l'animation.*/
-	animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
+ 	animation-duration: 4s; /* Nombre de temps que l'animation sera exécutée. */
+        animation-iteration-count: 4; /* Nombre de fois que l'animation sera exécutée. */
+        animation-timing-function: ease; / Spécifie la vitesse de la courbe de l'animation.*/
+        animation-delay: 1s; /* Spécifie dans combien de temps l'animation débutera */
 
 
 Voici pour ce qui peut être modifié dans cette animation. Les données doivent être 
